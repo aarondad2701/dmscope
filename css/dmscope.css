@@ -14,3 +14,10 @@
 .color1 {
     color: white;
 }
+
+#btn-info {
+    top: 110px !important;
+    right: 0;
+    position: absolute;
+    z-index: 11111111;
+}
