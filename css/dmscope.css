@@ -15,9 +15,22 @@
     color: white;
 }
 
-#btn-info {
+.collapse-info {
     top: 110px !important;
     right: 0;
     position: absolute;
     z-index: 11111111;
+    text-align: right;
+    height: 100vh;
+}
+
+.collapse-info .collapse, .collapse-info .collapsing {
+    width: 300px;
+    right: 0;
+    position: absolute;
+    height: 70vh;
+}
+
+.collapse-info .card-body {
+    height: 70vh;
 }
