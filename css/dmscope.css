@@ -1,5 +1,5 @@
 .nav-link {
-    color: grey;
+    border-bottom: grey;
 }
 .ecart {
     margin-top: 50px;
@@ -39,7 +39,27 @@
     height: 30px;
     width: 34px;
 }
+.taille-logo {
+    height: 43px;
+    width: 56px;
+}
 .btn-success {
     background-color: #9EC135;
     border-color: #9EC135;
+}
+.nav-center {
+    margin-left: 35%;
+}
+.nav-color-size{
+    border-color: grey;
+    height: 50px;
+}
+.espace-1 {
+    margin-right: 20px;
+}
+.espace-2 {
+    margin-right: 30px;
+}
+.espace-3 {
+    margin-right: 20px;
 }
