@@ -1,5 +1,5 @@
 .nav-link {
-    color: white;
+    color: grey;
 }
 .ecart {
     margin-top: 50px;
@@ -12,7 +12,7 @@
 }
 
 .color1 {
-    color: white;
+    color: grey;
 }
 
 .collapse-info {
@@ -38,4 +38,8 @@
 .taille-img-mec {
     height: 30px;
     width: 34px;
+}
+.btn-success {
+    background-color: #9EC135;
+    border-color: #9EC135;
 }
