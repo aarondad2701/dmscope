@@ -34,3 +34,8 @@
 .collapse-info .card-body {
     height: 70vh;
 }
+
+.taille-img-mec {
+    height: 30px;
+    width: 34px;
+}
