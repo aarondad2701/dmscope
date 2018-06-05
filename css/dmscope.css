@@ -40,8 +40,7 @@
     width: 34px;
 }
 .taille-logo {
-    height: 43px;
-    width: 56px;
+    width: 80px;
 }
 .btn-success {
     background-color: #9EC135;
@@ -62,4 +61,47 @@
 }
 .espace-3 {
     margin-right: 20px;
+}
+
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.nav .form-inline .form-control {
+    width: 60% !important;
+}
+.form-control-nav {
+    background: unset !important;
+    border: unset !important;
+}
+
+.form-control-nav:before {
+    content: 'f002';
+}
+
+footer {
+    background-color: #ecf0f1;
+    padding: 2em;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer a {
+    color: #bdc3c7 !important;
+}
+
+footer .p-text {
+    color: #bdc3c7 !important;
+}
+
+footer h3 {
+    color: #7f8c8d !important;
+    font-size: 1.2em;
 }
