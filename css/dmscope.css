@@ -11,7 +11,7 @@
     margin-bottom: 36px;
 }
 .ecart3 {
-    margin-top: 121px;
+    margin-top: 128px;
 }
 
 .color1 {
@@ -107,4 +107,78 @@ footer .p-text {
 footer h3 {
     color: #7f8c8d !important;
     font-size: 1.2em;
+}
+.border-right{
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 1);
+}
+
+/**
+ * Arrow
+ */
+.arrow_box {
+    display: inline-block;
+    position: relative;
+    color: white;
+    background: #9EC135 !important;
+    border: none !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px 0 35px;
+}
+.arrow_box:after, .arrow_box:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.arrow_box:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #9EC135;
+    border-width: 20px;
+    margin-top: -20px;
+}
+.arrow_box:before {
+    position: absolute;
+    left: 0;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: white;
+    border-width: 20px;
+    margin-top: -20px;
+}
+
+/**
+ * Arrow => Hover
+ */
+.arrow_box {
+    color: white !important;
+}
+
+/**
+ * Arrow => Active state
+ */
+.arrow_box.active {
+    background-color: #7E9A2A !important;
+    color: whitesmoke !important;
+}
+.arrow_box.active:after {
+    border-left-color: #7E9A2A;
+}
+
+
+/**
+ * Nav
+ */
+.nav.nav-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    padding: 0 1rem;
 }
