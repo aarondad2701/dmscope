@@ -14,357 +14,836 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-white fixed-top nav-color-size nav-link">
-    <img class="navbar-brand taille-logo" src="img/logo-dm-scope.png" >
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light border-bottom box-shadow">
+    <a class="navbar-brand" href="#"> <img class="navbar-brand taille-logo" src="img/logo-dm-scope.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="my-2 my-lg-0 nav-center">
-            <input class="" type="search" placeholder="Search transactions, invoices or help" aria-label="Search">
-        </form>
-        <a href="creerpatient.html" </a><img class="taille-img-mec espace-3" alt="créer patient"  src="img/Plus%20Vert.png"></a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-3 my-lg-0 nav-center">
+                <i class="fas fa-search"></i>
+                <input class="form-control mr-sm-2 form-control-nav" type="text" placeholder="Search transactions, invoices or help" aria-label="Search">
+            </form>
+            <a href="creerpatient.html"
+        </a><img class="taille-img-mec espace-3" alt="créer patient" src="img/Plus%20Vert.png"></a>
         <a href="#"><img class="taille-img-mec espace-1" src="img/Liste.png"></a>
         <a href="#"><img class="taille-img-mec espace-2" src="img/Stats.png"></a>
-        <p>Dr.John</p>
-        <figure>
-            <img class="taille-img-mec" src="img/mec.png" alt="" />
-            <figcaption></figcaption>
-        </figure>
+
+        <ul class="navbar-nav mr-5">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                    <img class="taille-img-mec" src="img/mec.png" alt=""/>
+                    <span>Dr.John</span>
+
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                </div>
+            </li>
+        </ul>
+
+
     </div>
 </nav>
 
-<div class="collapse" id="collapseExample">
-    <div class="card card-body">
-        Admin
-    </div>
-</div>
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top ecart">
 
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-               aria-controls="nav-home" aria-selected="true">Donnees personnelles</a>
-            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-               aria-controls="nav-profile" aria-selected="false">Procréation / Parentalité</a>
-            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact1" role="tab"
-               aria-controls="nav-contact" aria-selected="false">Recherche clinique</a>
-
-        </div>
-    </nav>
-
-    <div class="collapse-info">
-        <a class="btn btn-primary" data-toggle="collapse" href="#collapseInfo" role="button" aria-expanded="false"
-           aria-controls="collapseInfo">
-            Info
-        </a>
-        <div class="collapse" id="collapseInfo">
-            <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+<ul class="nav nav-tabs ecart3" id="myTab" role="tablist">
+    <li class="nav-item fleche">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="container mb-5 box-shadow">
+        <div class="row">
+            <div class="col-6">
+                <h2>Création de la fiche patient</h2>
+            </div>
+            <div class="col-3 text-right">
+                <button type="button" class="btn btn-success">Imprimer</button>
+            </div>
+            <div class="col-3 text-right">
+                <button type="button" class="btn btn-success">Information</button>
             </div>
         </div>
-    </div>
-
-
-    <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <form>
-                <div class="row ecart3">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="Nom">Nom</label>
-                            <input type="text" class="form-control" id="Nom" placeholder="Nom">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="Nom_de_Jeune_fille">Nom de Jeune fille</label>
-                            <input type="text" class="form-control" id="Nom_de_Jeune_fille"
-                                   placeholder="Nom de Jeune fille">
-                        </div>
+        <form>
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Nom">Nom</label>
+                        <input type="text" class="form-control" id="Nom" placeholder="Nom">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="Prenom">Prénom</label>
-                    <input type="text" class="form-control" id="Prenom" placeholder="Prénom">
-                </div>
-                <div class="form-group">
-                    <label for="date_de_naissance">Date de naissance</label>
-                    <input type="text" class="form-control" id="date_de_naissance" placeholder="JJ/MM/AAAA">
-                </div>
-                <div class="form-group">
-                    <label for="sex">Genre :</label>
-                    <select class="form-control" id="sex">
-                        <option></option>
-                        <option>Féminin</option>
-                        <option>Masculin</option>
-                    </select>
-                    <br>
-                </div>
-                <div>Lieu de naissance</div>
-                <br/>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="departement">Departement :</label>
-                            <select class="form-control" id="departement">
-                                <option></option>
-                                <option>Département de france</option>
-                                <option>01 Ain</option>
-                                <option>02 Aisne</option>
-                                <option>03 Allier</option>
-                                <option>04 Alpes-de-Haute-Provence</option>
-                                <option>05 Hautes-Alpes</option>
-                                <option>06 Alpes-Maritimes</option>
-                                <option>07 Ardèche</option>
-                                <option>08 Ardennes</option>
-                                <option>09 Ariège</option>
-                                <option>10 Aube</option>
-                                <option>11 Aude</option>
-                                <option>12 Aveyron</option>
-                                <option>13 Bouches-du-Rhône</option>
-                                <option>14 Calvados</option>
-                                <option>15 Cantal</option>
-                                <option>16 Charente</option>
-                                <option>17 Charente-Maritime</option>
-                                <option>18 Cher</option>
-                                <option>19 Corrèze</option>
-                                <option>2A Corse-du-Sud</option>
-                                <option>2B Haute-Corse</option>
-                                <option>21 Côte-d'Or</option>
-                                <option>22 Côtes-d'Armor</option>
-                                <option>23 Creuse</option>
-                                <option>24 Dordogne</option>
-                                <option>25 Doubs</option>
-                                <option>26 Drôme</option>
-                                <option>27 Eure</option>
-                                <option>28 Eure-et-Loir</option>
-                                <option>29 Finistère</option>
-                                <option>30 Gard</option>
-                                <option>31 Haute-Garonne</option>
-                                <option>32 Gers</option>
-                                <option>33 Gironde</option>
-                                <option>34 Hérault</option>
-                                <option>35 Ille-et-Vilaine</option>
-                                <option>36 Indre</option>
-                                <option>37 Indre-et-Loire</option>
-                                <option>38 Isère</option>
-                                <option>39 Jura</option>
-                                <option>40 Landes</option>
-                                <option>41 Loir-et-Cher</option>
-                                <option>42 Loire</option>
-                                <option>43 Haute-Loire</option>
-                                <option>44 Loire-Atlantique</option>
-                                <option>45 Loiret</option>
-                                <option>46 Lot</option>
-                                <option>47 Lot-et-Garonne</option>
-                                <option>48 Lozère</option>
-                                <option>49 Maine-et-Loire</option>
-                                <option>50 Manche</option>
-                                <option>51 Marne</option>
-                                <option>52 Haute-Marne</option>
-                                <option>53 Mayenne</option>
-                                <option>54 Meurthe-et-Moselle</option>
-                                <option>55 Meuse</option>
-                                <option>56 Morbihan</option>
-                                <option>57 Moselle</option>
-                                <option>58 Nièvre</option>
-                                <option>59 Nord</option>
-                                <option>60 Oise</option>
-                                <option>61 Orne</option>
-                                <option>62 Pas-de-Calais</option>
-                                <option>63 Puy-de-Dôme</option>
-                                <option>64 Pyrénées-Atlantiques</option>
-                                <option>65 Hautes-Pyrénées</option>
-                                <option>66 Pyrénées-Orientales</option>
-                                <option>67 Bas-Rhin</option>
-                                <option>68 Haut-Rhin</option>
-                                <option>69 Rhône</option>
-                                <option>70 Haute-Saône</option>
-                                <option>71 Saône-et-Loire</option>
-                                <option>72 Sarthe</option>
-                                <option>73 Savoie</option>
-                                <option>74 Haute-Savoie</option>
-                                <option>75 Paris</option>
-                                <option>76 Seine-Maritime</option>
-                                <option>77 Seine-et-Marne</option>
-                                <option>78 Yvelines</option>
-                                <option>79 Deux-Sèvres</option>
-                                <option>80 Somme</option>
-                                <option>81 Tarn</option>
-                                <option>82 Tarn-et-Garonne</option>
-                                <option>83 Var</option>
-                                <option>84 Vaucluse</option>
-                                <option>85 Vendée</option>
-                                <option>86 Vienne</option>
-                                <option>87 Haute-Vienne</option>
-                                <option>88 Vosges</option>
-                                <option>89 Yonne</option>
-                                <option>90 Territoire de Belfort</option>
-                                <option>91 Essonne</option>
-                                <option>92 Hauts-de-Seine</option>
-                                <option>93 Seine-Saint-Denis</option>
-                                <option>94 Val-de-Marne</option>
-                                <option>95 Val-d'Oise</option>
-                                <option>971 Guadeloupe</option>
-                                <option>972 Martinique</option>
-                                <option>973 Guyane</option>
-                                <option>974 La Réunion</option>
-                                <option>976 Mayotte</option>
-                                <option>Région québéquoise</option>
-                                <option>01 Bas-Saint-Laurent</option>
-                                <option>02 Saguenay-Lac-Saint-Jean</option>
-                                <option>03 Capitale-Nationale</option>
-                                <option>04 Mauricie</option>
-                                <option>05 Estrie</option>
-                                <option>06 Montréal</option>
-                                <option>07 Outaouais</option>
-                                <option>08 Abitibi-Témiscamingue</option>
-                                <option>09 Côte-Nord</option>
-                                <option>dix Nord-du-Québec</option>
-                                <option>11 Gaspésie-Îles-de-la-Madeleine</option>
-                                <option>12 Chaudière-Appalaches</option>
-                                <option>13 Laval</option>
-                                <option>14 Lanaudière</option>
-                                <option>15 Laurentides</option>
-                                <option>16 Montérégie</option>
-                                <option>17 Centre-du-Québec</option>
-                            </select>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="pays">Pays :</label>
-                            <select class="form-control" id="pays">
-                                <option></option>
-                                <option>France</option>
-                                <option>Canada</option>
-                            </select>
-                        </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Nom_de_Jeune_fille">Nom de Jeune fille</label>
+                        <input type="text" class="form-control" id="Nom_de_Jeune_fille"
+                               placeholder="Nom de Jeune fille">
                     </div>
                 </div>
-                <p>Décès</p>
-                <label class="radio-inline">
-                    <input type="radio" name="optradio"> Oui
-                </label>
-                <label class="radio-inline">
-                    <input type="radio" name="optradio"> Non
-                </label>
+            </div>
+            <div class="form-group">
+                <label for="Prenom">Prénom</label>
+                <input type="text" class="form-control" id="Prenom" placeholder="Prénom">
+            </div>
+            <div class="form-group">
+                <label for="date_de_naissance">Date de naissance</label>
+                <input type="text" class="form-control" id="date_de_naissance" placeholder="JJ/MM/AAAA">
+            </div>
+            <div class="form-group">
+                <label for="sex">Genre :</label>
+                <select class="form-control" id="sex">
+                    <option></option>
+                    <option>Féminin</option>
+                    <option>Masculin</option>
+                </select>
                 <br>
-                <br>
-                <div class="form-group">
-                    <label for="date_du-deces">Date du décès</label>
-                    <input type="text" class="form-control" id="date_du-deces" placeholder="JJ/MM/AAAA">
-                </div>
-                <div class="form-group">
-                    <label for="Cause_du_décès">Cause du décès</label>
-                    <select class="form-control" id="Cause_du_décès">
-                        <option></option>
-                        <option>Cardiaque</option>
-                        <option>Respiratoire</option>
-                        <option>Inconnu</option>
-                        <option>Autre</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="Accord_du_patient">Accord du patient</label>
-                    <select class="form-control" id="Accord_du_patient">
-                        <option></option>
-                        <option>Oui</option>
-                        <option>Non</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="Nom_père">Nom père</label>
-                            <input type="text" class="form-control" id="Nom_père" placeholder="Nom père">
-                        </div>
+            </div>
+            <div>Lieu de naissance</div>
+            <br/>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="departement">Departement :</label>
+                        <select class="form-control" id="departement">
+                            <option></option>
+                            <option>Département de france</option>
+                            <option>01 Ain</option>
+                            <option>02 Aisne</option>
+                            <option>03 Allier</option>
+                            <option>04 Alpes-de-Haute-Provence</option>
+                            <option>05 Hautes-Alpes</option>
+                            <option>06 Alpes-Maritimes</option>
+                            <option>07 Ardèche</option>
+                            <option>08 Ardennes</option>
+                            <option>09 Ariège</option>
+                            <option>10 Aube</option>
+                            <option>11 Aude</option>
+                            <option>12 Aveyron</option>
+                            <option>13 Bouches-du-Rhône</option>
+                            <option>14 Calvados</option>
+                            <option>15 Cantal</option>
+                            <option>16 Charente</option>
+                            <option>17 Charente-Maritime</option>
+                            <option>18 Cher</option>
+                            <option>19 Corrèze</option>
+                            <option>2A Corse-du-Sud</option>
+                            <option>2B Haute-Corse</option>
+                            <option>21 Côte-d'Or</option>
+                            <option>22 Côtes-d'Armor</option>
+                            <option>23 Creuse</option>
+                            <option>24 Dordogne</option>
+                            <option>25 Doubs</option>
+                            <option>26 Drôme</option>
+                            <option>27 Eure</option>
+                            <option>28 Eure-et-Loir</option>
+                            <option>29 Finistère</option>
+                            <option>30 Gard</option>
+                            <option>31 Haute-Garonne</option>
+                            <option>32 Gers</option>
+                            <option>33 Gironde</option>
+                            <option>34 Hérault</option>
+                            <option>35 Ille-et-Vilaine</option>
+                            <option>36 Indre</option>
+                            <option>37 Indre-et-Loire</option>
+                            <option>38 Isère</option>
+                            <option>39 Jura</option>
+                            <option>40 Landes</option>
+                            <option>41 Loir-et-Cher</option>
+                            <option>42 Loire</option>
+                            <option>43 Haute-Loire</option>
+                            <option>44 Loire-Atlantique</option>
+                            <option>45 Loiret</option>
+                            <option>46 Lot</option>
+                            <option>47 Lot-et-Garonne</option>
+                            <option>48 Lozère</option>
+                            <option>49 Maine-et-Loire</option>
+                            <option>50 Manche</option>
+                            <option>51 Marne</option>
+                            <option>52 Haute-Marne</option>
+                            <option>53 Mayenne</option>
+                            <option>54 Meurthe-et-Moselle</option>
+                            <option>55 Meuse</option>
+                            <option>56 Morbihan</option>
+                            <option>57 Moselle</option>
+                            <option>58 Nièvre</option>
+                            <option>59 Nord</option>
+                            <option>60 Oise</option>
+                            <option>61 Orne</option>
+                            <option>62 Pas-de-Calais</option>
+                            <option>63 Puy-de-Dôme</option>
+                            <option>64 Pyrénées-Atlantiques</option>
+                            <option>65 Hautes-Pyrénées</option>
+                            <option>66 Pyrénées-Orientales</option>
+                            <option>67 Bas-Rhin</option>
+                            <option>68 Haut-Rhin</option>
+                            <option>69 Rhône</option>
+                            <option>70 Haute-Saône</option>
+                            <option>71 Saône-et-Loire</option>
+                            <option>72 Sarthe</option>
+                            <option>73 Savoie</option>
+                            <option>74 Haute-Savoie</option>
+                            <option>75 Paris</option>
+                            <option>76 Seine-Maritime</option>
+                            <option>77 Seine-et-Marne</option>
+                            <option>78 Yvelines</option>
+                            <option>79 Deux-Sèvres</option>
+                            <option>80 Somme</option>
+                            <option>81 Tarn</option>
+                            <option>82 Tarn-et-Garonne</option>
+                            <option>83 Var</option>
+                            <option>84 Vaucluse</option>
+                            <option>85 Vendée</option>
+                            <option>86 Vienne</option>
+                            <option>87 Haute-Vienne</option>
+                            <option>88 Vosges</option>
+                            <option>89 Yonne</option>
+                            <option>90 Territoire de Belfort</option>
+                            <option>91 Essonne</option>
+                            <option>92 Hauts-de-Seine</option>
+                            <option>93 Seine-Saint-Denis</option>
+                            <option>94 Val-de-Marne</option>
+                            <option>95 Val-d'Oise</option>
+                            <option>971 Guadeloupe</option>
+                            <option>972 Martinique</option>
+                            <option>973 Guyane</option>
+                            <option>974 La Réunion</option>
+                            <option>976 Mayotte</option>
+                            <option>Région québéquoise</option>
+                            <option>01 Bas-Saint-Laurent</option>
+                            <option>02 Saguenay-Lac-Saint-Jean</option>
+                            <option>03 Capitale-Nationale</option>
+                            <option>04 Mauricie</option>
+                            <option>05 Estrie</option>
+                            <option>06 Montréal</option>
+                            <option>07 Outaouais</option>
+                            <option>08 Abitibi-Témiscamingue</option>
+                            <option>09 Côte-Nord</option>
+                            <option>dix Nord-du-Québec</option>
+                            <option>11 Gaspésie-Îles-de-la-Madeleine</option>
+                            <option>12 Chaudière-Appalaches</option>
+                            <option>13 Laval</option>
+                            <option>14 Lanaudière</option>
+                            <option>15 Laurentides</option>
+                            <option>16 Montérégie</option>
+                            <option>17 Centre-du-Québec</option>
+                        </select>
+                        <br>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="Année_Naissance_Père">Année Naissance Père</label>
-                            <input type="text" class="form-control" id="Année_Naissance_Père"
-                                   placeholder="Année Naissance Père">
-                        </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="pays">Pays :</label>
+                        <select class="form-control" id="pays">
+                            <option></option>
+                            <option>France</option>
+                            <option>Canada</option>
+                        </select>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="Nom_mère">Nom mère</label>
-                            <input type="text" class="form-control" id="Nom_mère" placeholder="Nom mère">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="Année_Naissance_Mère">Année Naissance Mère</label>
-                            <input type="text" class="form-control" id="Année_Naissance_Mère"
-                                   placeholder="Année Naissance Mère">
-                        </div>
+            </div>
+            <p>Décès</p>
+            <label class="radio-inline">
+                <input type="radio" name="optradio"> Oui
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optradio"> Non
+            </label>
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="date_du-deces">Date du décès</label>
+                <input type="text" class="form-control" id="date_du-deces" placeholder="JJ/MM/AAAA">
+            </div>
+            <div class="form-group">
+                <label for="Cause_du_décès">Cause du décès</label>
+                <select class="form-control" id="Cause_du_décès">
+                    <option></option>
+                    <option>Cardiaque</option>
+                    <option>Respiratoire</option>
+                    <option>Inconnu</option>
+                    <option>Autre</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Accord_du_patient">Accord du patient</label>
+                <select class="form-control" id="Accord_du_patient">
+                    <option></option>
+                    <option>Oui</option>
+                    <option>Non</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Nom_père">Nom père</label>
+                        <input type="text" class="form-control" id="Nom_père" placeholder="Nom père">
                     </div>
                 </div>
-            </form>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Année_Naissance_Père">Année Naissance Père</label>
+                        <input type="text" class="form-control" id="Année_Naissance_Père"
+                               placeholder="Année Naissance Père">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Nom_mère">Nom mère</label>
+                        <input type="text" class="form-control" id="Nom_mère" placeholder="Nom mère">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Année_Naissance_Mère">Année Naissance Mère</label>
+                        <input type="text" class="form-control" id="Année_Naissance_Mère"
+                               placeholder="Année Naissance Mère">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="row mt-2">
+            <div class="col-4 text-center">
+                <button type="button" class="btn btn-success">Précédent</button>
+            </div>
+            <div class="col-4 text-center">
+                <button type="button" class="btn btn-success">Enregistrer comme brouillon</button>
+            </div>
+            <div class="col-4 text-center">
+                <button type="button" class="btn btn-success">Création visite initiale</button>
+            </div>
         </div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-        <div class="tab-pane fade" id="nav-contact1" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-        <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    </div>
+
+    <div class="tab-pane fade container" id="profile" role="tabpanel" aria-labelledby="profile-tab"><div class="control-group controls">
+        <div class="col-md-4">
+            Bilan respiratoire réalisé :
+        </div>
+        <div class="col-md-4">
+            <label class="radio-inline" for="radios-0">
+                <input name="rdv2   " id="radios-0" value="OUI" checked="checked" type="radio">
+                OUI
+            </label>
+            <label class="radio-inline" for="radios-1">
+                <input name="rdv2   " id="radios-1" value="NON" type="radio">
+                NON
+            </label>
+        </div>
+        <div class="col-md-4">
+            <label class="control-label" for="X_003_Typ_ziadosti">choisir :</label>
+
+            <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                <option>blala1</option>
+                <option>blala</option>
+            </select>
+        </div>
 
 
+    </div>
+        <br>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Bilan respiratoire normal:
+            </div>
+            <div class="col-md-4">
+                <label class="radio-inline" for="radios-0">
+                    <input name="rdv" id="radios-0" value="OUI" checked="checked" type="radio">
+                    OUI
+                </label>
+                <label class="radio-inline" for="radios-1">
+                    <input name="rdv" id="radios-1" value="NON" type="radio">
+                    NON
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">choisir :</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>blala1</option>
+                    <option>blala</option>
+                </select>
+            </div>
+
+
+        </div>
+
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Présence de dyspnée :
+            </div>
+            <div class="col-md-4">
+                <label class="radio-inline" for="radios-0">
+                    <input name="rdv1" id="radios-0" value="OUI" checked="checked" type="radio">
+                    OUI
+                </label>
+                <label class="radio-inline" for="radios-1">
+                    <input name="rdv1" id="radios-1" value="NON" type="radio">
+                    NON
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">choisir :</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>blala1</option>
+                    <option>blala</option>
+                </select>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Âge de début des problèmes respiratoires :
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">nombre</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Champs libre" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Obtenue par  :
+            </div>
+            <div class="col-md-3">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Donnée intérrogatoire" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+            <div class="col-md-3">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Donnée de suivi" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+            <div class="col-md-2">
+                <label class="control-label" for="X_003_Typ_ziadosti">menu déroulant</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+
+
+
+        </div>
+
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Apnée du sommeil :
+            </div>
+            <div class="col-md-4">
+                <label class="radio-inline" for="radios-0">
+                    <input name="rdv3" id="radios-0" value="OUI" checked="checked" type="radio">
+                    OUI
+                </label>
+                <label class="radio-inline" for="radios-1">
+                    <input name="rdv3" id="radios-1" value="NON" type="radio">
+                    NON
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">choisir :</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>blala1</option>
+                    <option>blala</option>
+                </select>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Fatigue :
+            </div>
+            <div class="col-md-4">
+                <label class="radio-inline" for="radios-0">
+                    <input name="rdv4" id="radios-0" value="OUI" checked="checked" type="radio">
+                    OUI
+                </label>
+                <label class="radio-inline" for="radios-1">
+                    <input name="rdv4" id="radios-1" value="NON" type="radio">
+                    NON
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">choisir :</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>blala1</option>
+                    <option>blala</option>
+                </select>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Ventilation assistée :
+            </div>
+            <div class="col-md-4">
+                <label class="radio-inline" for="radios-0">
+                    <input name="rdv6" id="radios-0" value="OUI" checked="checked" type="radio">
+                    OUI
+                </label>
+                <label class="radio-inline" for="radios-1">
+                    <input name="rdv6" id="radios-1" value="NON" type="radio">
+                    NON
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">choisir :</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>blala1</option>
+                    <option>blala</option>
+                </select>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Mode ventilatoire :
+            </div>
+            <div class="col-md-4">
+                <label class="radio-inline" for="radios-0">
+                    <input name="rdv5" id="radios-0" value="OUI" checked="checked" type="radio">
+                    Invasif
+                </label>
+                <label class="radio-inline" for="radios-1">
+                    <input name="rdv5" id="radios-1" value="NON" type="radio">
+                    Non-invasif
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">choisir :</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>blala1</option>
+                    <option>blala</option>
+                </select>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Durée de la ventilation :
+            </div>
+            <div class="col-md-5">
+                <label class="radio-inline" for="radios-0">
+                    <input name="rdv7" id="radios-0" value="OUI" checked="checked" type="radio">
+                    Intermittente lors de poussées
+                </label>
+                <label class="radio-inline" for="radios-1">
+                    <input name="rdv7" id="radios-1" value="NON" type="radio">
+                    intermittente nocturne
+                </label>
+            </div>
+            <div class="col-md-3">
+                <label class="control-label" for="X_003_Typ_ziadosti">choisir :</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>blala1</option>
+                    <option>blala</option>
+                </select>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Pose ventilation invasive :
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">Date</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>8 mars</option>
+                    <option>8 Mai</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Champs libre" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+
+
+        </div>
+
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Observance :
+            </div>
+            <div class="col-md-5">
+                <label class="radio-inline" for="radios-0">
+                    <input name="rdv8" id="radios-0" value="OUI" checked="checked" type="radio">
+                    OUI
+                </label>
+                <label class="radio-inline" for="radios-1">
+                    <input name="rdv8" id="radios-1" value="NON" type="radio">
+                    NON
+                </label>
+            </div>
+            <div class="col-md-3">
+                <label class="control-label" for="X_003_Typ_ziadosti">choisir :</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>blala1</option>
+                    <option>blala</option>
+                </select>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Fatigue :
+            </div>
+            <div class="col-md-5">
+                <label class="radio-inline" for="radios-0">
+                    <input name="rdv9" id="radios-0" value="OUI" checked="checked" type="radio">
+                    OUI
+                </label>
+                <label class="radio-inline" for="radios-1">
+                    <input name="rdv9" id="radios-1" value="NON" type="radio">
+                    NON
+                </label>
+            </div>
+            <div class="col-md-3">
+                <label class="control-label" for="X_003_Typ_ziadosti">choisir :</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>blala1</option>
+                    <option>blala</option>
+                </select>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Date de l'examen :
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">Date</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>8 mars</option>
+                    <option>8 Mai</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Champs libre" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Assis :
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">nombre</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Champs libre" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Couché :
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">nombre</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Champs libre" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Date de l'examen :
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">Date</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>8 mars</option>
+                    <option>8 Mai</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Champs libre" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+
+
+        </div>
+
+        <div class="control-group controls">
+            <div class="col-md-4">
+                PaO2 (mmHg):
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">nombre</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Champs libre" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                PcO2 (mmHg):
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">nombre</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Champs libre" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Saturation (%) :
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">nombre</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Champs libre" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Pression inspiratoire maximale (%) :
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">nombre</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Champs libre" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+
+
+        </div>
+        <div class="control-group controls">
+            <div class="col-md-4">
+                Pression Expiratoire maximale (%):
+            </div>
+            <div class="col-md-4">
+                <label class="control-label" for="X_003_Typ_ziadosti">nombre</label>
+
+                <select id="X_003_Typ_ziadosti" name="X_003_Typ_ziadosti" class="input-xlarge">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input id="G_010_033_Ulica" name="G_010_033_Ulica" type="text" placeholder="Champs libre" class="input-xlarge">
+                <p class="help-block"></p>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="fixed-bottom">
 
-    <div class="row bg-white text-center color-buttonn">
-        <div class="col-lg-4">
-            <button type="button" class="btn btn-success"><-- Précédent</button>
-        </div>
-        <div class="col-lg-4">
-            <button type="button" class="btn btn-success">Enregistrer en tant que brouillon</button>
-        </div>
-        <div class="col-lg-4">
-            <button type="button" class="btn btn-success">Création dui suivi patient --></button>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <p><strong>DM Scope</strong> © 2018</p>
+                <p class="p-text">Observatoire Français des Dyostrophies Myotoniques</p>
+            </div>
+            <div class="col-3">
+                <h3>Liens</h3>
+                <ul>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3>Follow us</h3>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="#"><i class="fab fa-youtube-square fa-2x"></i></a>
+            </div>
         </div>
     </div>
-</div>
-
-<footer class="card-header bg-white ecart1">
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="col-lg-12">
-               <p> DM Scope       &copy; 2018</p>
-            </div>
-            <div class="col-lg-12">
-                Observatoire Français des Dyostrophies Myotoniques
-            </div>
-        </div>
-        <div class="col-lg-4">
-        </div>
-
-        <div class="col-lg-4">
-            <div class="col-lg-12">
-                Follow us :
-            </div>
-            <div class="col-lg-12">
-                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-                <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-                <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-                <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
-            </div>
-        </div>
-        </div>
-    </div>
-
 </footer>
+
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -376,30 +855,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-<!--
-<script>
-    fixedBottomNav = $('.fixed-bottom');
-
-
-    window.setInterval(function () {
-        if (fixedBottomNav.offset().top > ($(document).height()) - 60) {
-            fixedBottomNav.hide();
-            console.log('hide');
-        } else if (fixedBottomNav.offset().top < ($(document).height())) {
-            fixedBottomNav.show();
-            console.log('show');
-        }
-
-    }, 50);
-
-    console.log($(document).height() - 59);
-    console.log(fixedBottomNav.offset().top);
-
-
-
-</script>
--->
 </body>
-
-
 </html>
