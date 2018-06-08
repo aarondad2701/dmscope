@@ -14,12 +14,15 @@
     margin-top: 128px;
 }
 
+.ecart4 {
+    margin-top: 20px;
+}
+
 .color1 {
     color: grey;
 }
 
 .collapse-info {
-    top: 110px !important;
     right: 0;
     position: absolute;
     z-index: 11111111;
