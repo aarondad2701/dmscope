@@ -57,6 +57,7 @@
     background-color: #9EC135;
     border-color: #9EC135;
     margin-right: 17px;
+    border-radius: 30px;
 }
 .nav-center {
     margin-left: auto;
@@ -204,6 +205,7 @@ footer h3 {
     color:  black;
     background-color: #ffffff;
     border-color: #9EC135;
+    border-radius: 30px;
 }
 
 
