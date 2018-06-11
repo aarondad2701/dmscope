@@ -50,6 +50,7 @@
 .btn-success {
     background-color: #9EC135;
     border-color: #9EC135;
+    margin-right: 17px;
 }
 .nav-center {
     margin-left: auto;
@@ -189,8 +190,15 @@ footer h3 {
     padding: 0 1rem;
 }
 
+.nav {
+    margin-top: 200px;
+}
 
-
+.btn-color {
+    color:  black;
+    background-color: #ffffff;
+    border-color: #9EC135;
+}
 
 
 /**
@@ -295,17 +303,11 @@ hr{
     box-sizing: border-box;
 }
 
-
-
 .btn-dulogin:hover {
     color: #fff;
     background-color: #9EC135;
     border-color: #9EC135;
 }
-
-
-
-
 
 .taille-logo-1 {
     margin-left: 29%;
@@ -322,4 +324,15 @@ a {
 
 .nav-tabs {
     border-bottom: none;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.space {
+    margin-bottom: 60px;
+}
+.space1 {
+    margin-top: 60px;
 }
