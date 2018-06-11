@@ -15,7 +15,7 @@
 }
 
 .ecart4 {
-    margin-top: 20px;
+    margin-top: 61px;
 }
 
 .color1 {
@@ -67,6 +67,9 @@
 }
 .espace-3 {
     margin-right: 20px;
+}
+.padding-1{
+    margin-top: 122px;
 }
 
 .box-shadow {
@@ -315,4 +318,8 @@ hr{
 a {
     color: grey;
 
+}
+
+.nav-tabs {
+    border-bottom: none;
 }
